@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project>
+	<TemplateObjectList>
+		<TemplateObject objectName="self" id="0" isTemp="false"/>
+		<TemplateObject objectName="target" id="1" isTemp="false"/>
+	</TemplateObjectList>
+	<RefParamList/>
+	<Action tag="" length="3.000" loop="false">
+		<Track trackName="SkillFuncDuration0" eventType="SkillFuncDuration" guid="b1f79c46-176e-424a-999b-8e1a499b8707" enabled="true" lod="0" useRefParam="false" refParamName="" r="0.017" g="1.000" b="0.000" execOnForceStopped="false" execOnActionCompleted="false" stopAfterLastEvent="true">
+			<Event eventName="SkillFuncDuration" time="0.000" length="3.000" isDuration="true">
+				<Enum name="SkillFuncType" value="7" refParamName="" useRefParam="false">
+					<uint name="物理伤害"/>
+					<uint name="法术伤害"/>
+					<uint name="真实伤害"/>
+					<uint name="回复生命值"/>
+					<uint name="增加攻击速度"/>
+					<uint name="减少攻击速度"/>
+					<uint name="增加移动速度"/>
+					<uint name="减少移动速度"/>
+					<uint name="提高攻击力"/>
+					<uint name="降低攻击力"/>
+					<uint name="吸血"/>
+					<uint name="增加护甲"/>
+					<uint name="减少护甲"/>
+					<uint name="增加抗性"/>
+					<uint name="减少抗性"/>
+					<uint name="免疫效果"/>
+					<uint name="减少技能CD"/>
+					<uint name="增加法术强度"/>
+					<uint name="减少法术强度"/>
+					<uint name="增加暴击率"/>
+					<uint name="减少暴击率"/>
+					<uint name="增加最大生命"/>
+					<uint name="减少最大生命"/>
+					<uint name="增加物理穿透"/>
+					<uint name="减少物理穿透"/>
+					<uint name="增加法术穿透"/>
+					<uint name="减少法术穿透"/>
+				</Enum>
+			</Event>
+		</Track>
+		<Track trackName="TriggerParticle0" eventType="TriggerParticle" guid="f2007596-d88b-48aa-8429-dbabfeffb344" enabled="true" lod="0" useRefParam="false" refParamName="" r="0.267" g="1.000" b="0.000" execOnForceStopped="false" execOnActionCompleted="false" stopAfterLastEvent="true">
+			<Event eventName="TriggerParticle" time="0.000" length="3.000" isDuration="true">
+				<TemplateObject name="targetId" objectName="target" id="1" isTemp="false" refParamName="" useRefParam="false"/>
+				<TemplateObject name="objectSpaceId" objectName="target" id="1" isTemp="false" refParamName="" useRefParam="false"/>
+				<String name="resourceName" value="" refParamName="" useRefParam="false"/>
+				<String name="bindPointName" value="" refParamName="" useRefParam="false"/>
+				<Vector3 name="bindPosOffset" x="0.000" y="1.100" z="0.000" refParamName="" useRefParam="false"/>
+				<EulerAngle name="bindRotOffset" x="0.000" y="0.000" z="0.000" refParamName="" useRefParam="false"/>
+				<Vector3 name="scaling" x="0.300" y="0.300" z="0.300" refParamName="" useRefParam="false"/>
+				<bool name="enableLayer" value="false" refParamName="" useRefParam="false"/>
+				<bool name="bBulletPos" value="false" refParamName="" useRefParam="false"/>
+				<bool name="bBulletDir" value="false" refParamName="" useRefParam="false"/>
+				<int name="layer" value="0" refParamName="" useRefParam="false"/>
+				<bool name="enableTag" value="false" refParamName="" useRefParam="false"/>
+				<String name="tag" value="" refParamName="" useRefParam="false"/>
+				<bool name="applyActionSpeedToParticle" value="true" refParamName="" useRefParam="false"/>
+				<int name="extend" value="10" refParamName="" useRefParam="false"/>
+			</Event>
+		</Track>
+	</Action>
+</Project>
+

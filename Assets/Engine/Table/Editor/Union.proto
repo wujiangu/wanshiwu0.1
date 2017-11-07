@@ -1,0 +1,23 @@
+package ProtoTable;
+
+enum UnionCellType
+{		
+	union_fix = 1;				//固定数值
+	union_fixGrow = 2; 		//固定成长
+	union_everyvalue = 3;	//每级数值
+}
+
+message EveryValue
+{
+	repeated int32 everyValues = 1;
+}
+
+
+message UnionCell
+{
+	required UnionCellType valueType = 1;
+	optional EveryValue eValues = 2;		//每级数值
+	optional int32 fixValue = 3;							//固定数值
+	optional int32 fixInitValue = 4;					//固定成长初始值
+	optional int32 fixLevelGrow = 5;					//固定成长每级增长
+};

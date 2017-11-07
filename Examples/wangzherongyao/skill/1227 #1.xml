@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project>
+	<TemplateObjectList>
+		<TemplateObject objectName="self" id="0" isTemp="false"/>
+		<TemplateObject objectName="target" id="1" isTemp="false"/>
+	</TemplateObjectList>
+	<RefParamList/>
+	<Action tag="" length="0.200" loop="false">
+		<Track trackName="HitTriggerTick2" eventType="HitTriggerTick" guid="72093fa4-11ff-4b3a-906b-7d3ea0705156" enabled="true" lod="0" useRefParam="false" refParamName="" r="0.000" g="0.300" b="1.000" execOnForceStopped="false" execOnActionCompleted="false" stopAfterLastEvent="true">
+			<Event eventName="HitTriggerTick" time="0.000" isDuration="false">
+				<TemplateObject name="targetId" objectName="self" id="0" isTemp="false" refParamName="" useRefParam="false"/>
+				<TemplateObject name="triggerId" objectName="self" id="0" isTemp="false" refParamName="" useRefParam="false"/>
+				<bool name="bulletHit" value="false" refParamName="" useRefParam="false"/>
+				<TemplateObject name="victimId" objectName="None" id="-1" isTemp="false" refParamName="" useRefParam="false"/>
+				<bool name="lastHit" value="false" refParamName="" useRefParam="false"/>
+				<int name="SelfSkillCombineID_1" value="912270" refParamName="" useRefParam="false"/>
+				<int name="SelfSkillCombineID_2" value="0" refParamName="" useRefParam="false"/>
+				<int name="SelfSkillCombineID_3" value="0" refParamName="" useRefParam="false"/>
+				<int name="TargetSkillCombine_1" value="0" refParamName="" useRefParam="false"/>
+				<int name="TargetSkillCombine_2" value="0" refParamName="" useRefParam="false"/>
+				<int name="TargetSkillCombine_3" value="0" refParamName="" useRefParam="false"/>
+			</Event>
+		</Track>
+	</Action>
+</Project>
+

@@ -1,0 +1,317 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project>
+	<TemplateObjectList>
+		<TemplateObject objectName="self" id="0" isTemp="false"/>
+		<TemplateObject objectName="target" id="1" isTemp="false"/>
+	</TemplateObjectList>
+	<RefParamList>
+		<Vector3i name="_BulletDir" x="0" y="0" z="0" refParamName="" useRefParam="false"/>
+	</RefParamList>
+	<Action tag="" length="3.000" loop="false">
+		<Track trackName="TriggerParticle0" eventType="TriggerParticle" guid="e7ee7035-35b2-4299-b698-2d687b8a1d64" enabled="true" lod="0" useRefParam="false" refParamName="" r="0.000" g="0.950" b="1.000" execOnForceStopped="false" execOnActionCompleted="false" stopAfterLastEvent="true">
+			<Event eventName="TriggerParticle" time="0.000" length="3.000" isDuration="true">
+				<TemplateObject name="targetId" objectName="self" id="0" isTemp="false" refParamName="" useRefParam="false"/>
+				<TemplateObject name="objectSpaceId" objectName="self" id="0" isTemp="false" refParamName="" useRefParam="false"/>
+				<String name="resourceName" value="prefab_skill_effects/tongyong_effects/huanling_effect/zhanchangjijiu_tf_01" refParamName="" useRefParam="false"/>
+				<String name="bindPointName" value="" refParamName="" useRefParam="false"/>
+				<Vector3 name="bindPosOffset" x="0.000" y="1.000" z="0.000" refParamName="" useRefParam="false"/>
+				<EulerAngle name="bindRotOffset" x="0.000" y="0.000" z="0.000" refParamName="" useRefParam="false"/>
+				<Vector3 name="scaling" x="1.000" y="1.000" z="1.000" refParamName="" useRefParam="false"/>
+				<bool name="enableLayer" value="false" refParamName="" useRefParam="false"/>
+				<bool name="bBulletPos" value="false" refParamName="" useRefParam="false"/>
+				<bool name="bBulletDir" value="false" refParamName="" useRefParam="false"/>
+				<bool name="bBullerPosDir" value="false" refParamName="" useRefParam="false"/>
+				<int name="layer" value="0" refParamName="" useRefParam="false"/>
+				<bool name="enableTag" value="false" refParamName="" useRefParam="false"/>
+				<String name="tag" value="" refParamName="" useRefParam="false"/>
+				<bool name="applyActionSpeedToParticle" value="true" refParamName="" useRefParam="false"/>
+				<int name="extend" value="10" refParamName="" useRefParam="false"/>
+				<bool name="bOnlyFollowPos" value="false" refParamName="" useRefParam="false"/>
+				<bool name="bUseSkin" value="false" refParamName="" useRefParam="false"/>
+			</Event>
+		</Track>
+		<Track trackName="SkillFuncPerioidc0" eventType="SkillFuncPerioidc" guid="30b14d04-521d-4462-ab0c-7ced1d7b5e99" enabled="true" lod="0" useRefParam="false" refParamName="" r="1.000" g="0.000" b="0.950" execOnForceStopped="false" execOnActionCompleted="false" stopAfterLastEvent="true">
+			<Event eventName="SkillFuncPerioidc" time="0.000" length="3.000" isDuration="true">
+				<Enum name="SkillFuncType" value="3" refParamName="" useRefParam="false">
+					<uint name="物理伤害"/>
+					<uint name="法术伤害"/>
+					<uint name="真实伤害"/>
+					<uint name="回复生命值"/>
+					<uint name="增加攻击速度"/>
+					<uint name="减少攻击速度"/>
+					<uint name="增加移动速度"/>
+					<uint name="减少移动速度"/>
+					<uint name="提高攻击力"/>
+					<uint name="降低攻击力"/>
+					<uint name="吸血"/>
+					<uint name="增加护甲"/>
+					<uint name="减少护甲"/>
+					<uint name="增加抗性"/>
+					<uint name="减少抗性"/>
+					<uint name="免疫效果"/>
+					<uint name="减少技能CD"/>
+					<uint name="增加法术强度"/>
+					<uint name="减少法术强度"/>
+					<uint name="增加暴击率"/>
+					<uint name="减少暴击率"/>
+					<uint name="增加最大生命"/>
+					<uint name="减少最大生命"/>
+					<uint name="增加物理穿透"/>
+					<uint name="减少物理穿透"/>
+					<uint name="增加法术穿透"/>
+					<uint name="减少法术穿透"/>
+					<uint name="护盾"/>
+					<uint name="增加技能印记"/>
+					<uint name="触发技能印记"/>
+					<uint name="免疫伤害"/>
+					<uint name="免疫控制"/>
+					<uint name="迅速复活"/>
+					<uint name="法球效果"/>
+					<uint name="驱散效果"/>
+					<uint name="物理吸血"/>
+					<uint name="法术吸血"/>
+					<uint name="伤害免疫率"/>
+					<uint name="获取视野效果"/>
+					<uint name="隐身效果"/>
+					<uint name="伤害输出率效果"/>
+					<uint name="韧性率效果"/>
+					<uint name="冷却缩减效果"/>
+					<uint name="抗暴率效果"/>
+					<uint name="条件伤害输出率效果"/>
+					<uint name="忽略RVO"/>
+					<uint name="生命条件效果"/>
+					<uint name="更换血条风格"/>
+					<uint name="目标伤害加成效果"/>
+					<uint name="击杀经验加成效果"/>
+					<uint name="增加经验效果"/>
+					<uint name="受控额外效果"/>
+					<uint name="免疫暴击效果"/>
+					<uint name="限制最大伤害效果"/>
+					<uint name="免疫致命伤害效果"/>
+					<uint name="改变技能"/>
+					<uint name="禁用技能"/>
+				</Enum>
+				<int name="PeriodicInterval" value="500" refParamName="" useRefParam="false"/>
+			</Event>
+		</Track>
+		<Track trackName="SkillFuncPerioidc0" eventType="SkillFuncPerioidc" guid="78446aa1-141b-48d7-99b1-c1262d72486c" enabled="false" lod="0" useRefParam="false" refParamName="" r="0.000" g="0.567" b="1.000" execOnForceStopped="false" execOnActionCompleted="false" stopAfterLastEvent="true">
+			<Event eventName="SkillFuncPerioidc" time="0.000" length="3.000" isDuration="true">
+				<Enum name="SkillFuncType" value="58" refParamName="" useRefParam="false">
+					<uint name="物理伤害"/>
+					<uint name="法术伤害"/>
+					<uint name="真实伤害"/>
+					<uint name="回复生命值"/>
+					<uint name="增加攻击速度"/>
+					<uint name="减少攻击速度"/>
+					<uint name="增加移动速度"/>
+					<uint name="减少移动速度"/>
+					<uint name="提高攻击力"/>
+					<uint name="降低攻击力"/>
+					<uint name="吸血"/>
+					<uint name="增加护甲"/>
+					<uint name="减少护甲"/>
+					<uint name="增加抗性"/>
+					<uint name="减少抗性"/>
+					<uint name="免疫效果"/>
+					<uint name="减少技能CD"/>
+					<uint name="增加法术强度"/>
+					<uint name="减少法术强度"/>
+					<uint name="增加暴击率"/>
+					<uint name="减少暴击率"/>
+					<uint name="增加最大生命"/>
+					<uint name="减少最大生命"/>
+					<uint name="增加物理穿透"/>
+					<uint name="减少物理穿透"/>
+					<uint name="增加法术穿透"/>
+					<uint name="减少法术穿透"/>
+					<uint name="护盾"/>
+					<uint name="增加技能印记"/>
+					<uint name="触发技能印记"/>
+					<uint name="免疫伤害"/>
+					<uint name="免疫控制"/>
+					<uint name="迅速复活"/>
+					<uint name="法球效果"/>
+					<uint name="驱散效果"/>
+					<uint name="物理吸血"/>
+					<uint name="法术吸血"/>
+					<uint name="伤害免疫率"/>
+					<uint name="获取视野效果"/>
+					<uint name="隐身效果"/>
+					<uint name="伤害输出率效果"/>
+					<uint name="韧性率效果"/>
+					<uint name="冷却缩减效果"/>
+					<uint name="抗暴率效果"/>
+					<uint name="条件伤害输出率效果"/>
+					<uint name="忽略RVO"/>
+					<uint name="生命条件效果"/>
+					<uint name="更换血条风格"/>
+					<uint name="目标伤害加成效果"/>
+					<uint name="击杀经验加成效果"/>
+					<uint name="增加经验效果"/>
+					<uint name="受控额外效果"/>
+					<uint name="免疫暴击效果"/>
+					<uint name="限制最大伤害效果"/>
+					<uint name="免疫致命伤害效果"/>
+					<uint name="改变技能"/>
+					<uint name="禁用技能"/>
+					<uint name="改变暴击伤害效果"/>
+					<uint name="回复能量值"/>
+				</Enum>
+				<int name="PeriodicInterval" value="500" refParamName="" useRefParam="false"/>
+			</Event>
+		</Track>
+		<Track trackName="SkillFuncInstant2" eventType="SkillFuncInstant" guid="0242aaee-788c-4db4-8fd8-4059b11ebc59" enabled="false" lod="0" useRefParam="false" refParamName="" r="0.000" g="1.000" b="0.467" execOnForceStopped="false" execOnActionCompleted="false" stopAfterLastEvent="true">
+			<Event eventName="SkillFuncInstant" time="0.000" isDuration="false">
+				<Enum name="SkillFuncType" value="58" refParamName="" useRefParam="false">
+					<uint name="物理伤害"/>
+					<uint name="法术伤害"/>
+					<uint name="真实伤害"/>
+					<uint name="回复生命值"/>
+					<uint name="增加攻击速度"/>
+					<uint name="减少攻击速度"/>
+					<uint name="增加移动速度"/>
+					<uint name="减少移动速度"/>
+					<uint name="提高攻击力"/>
+					<uint name="降低攻击力"/>
+					<uint name="吸血"/>
+					<uint name="增加护甲"/>
+					<uint name="减少护甲"/>
+					<uint name="增加抗性"/>
+					<uint name="减少抗性"/>
+					<uint name="免疫效果"/>
+					<uint name="减少技能CD"/>
+					<uint name="增加法术强度"/>
+					<uint name="减少法术强度"/>
+					<uint name="增加暴击率"/>
+					<uint name="减少暴击率"/>
+					<uint name="增加最大生命"/>
+					<uint name="减少最大生命"/>
+					<uint name="增加物理穿透"/>
+					<uint name="减少物理穿透"/>
+					<uint name="增加法术穿透"/>
+					<uint name="减少法术穿透"/>
+					<uint name="护盾"/>
+					<uint name="增加技能印记"/>
+					<uint name="触发技能印记"/>
+					<uint name="免疫伤害"/>
+					<uint name="免疫控制"/>
+					<uint name="迅速复活"/>
+					<uint name="法球效果"/>
+					<uint name="驱散效果"/>
+					<uint name="物理吸血"/>
+					<uint name="法术吸血"/>
+					<uint name="伤害免疫率"/>
+					<uint name="获取视野效果"/>
+					<uint name="隐身效果"/>
+					<uint name="伤害输出率效果"/>
+					<uint name="韧性率效果"/>
+					<uint name="冷却缩减效果"/>
+					<uint name="抗暴率效果"/>
+					<uint name="条件伤害输出率效果"/>
+					<uint name="忽略RVO"/>
+					<uint name="生命条件效果"/>
+					<uint name="更换血条风格"/>
+					<uint name="目标伤害加成效果"/>
+					<uint name="击杀经验加成效果"/>
+					<uint name="增加经验效果"/>
+					<uint name="受控额外效果"/>
+					<uint name="免疫暴击效果"/>
+					<uint name="限制最大伤害效果"/>
+					<uint name="免疫致命伤害效果"/>
+					<uint name="改变技能(禁止使用)"/>
+					<uint name="禁用技能"/>
+					<uint name="改变暴击伤害效果"/>
+					<uint name="回复能量值"/>
+				</Enum>
+			</Event>
+		</Track>
+		<Track trackName="SkillFuncDuration0" eventType="SkillFuncDuration" guid="70ef4ad5-ecca-40d2-a0b6-f73683667dfc" enabled="true" lod="0" useRefParam="false" refParamName="" r="0.000" g="0.633" b="1.000" execOnForceStopped="false" execOnActionCompleted="false" stopAfterLastEvent="true">
+			<Event eventName="SkillFuncDuration" time="0.000" length="3.000" isDuration="true">
+				<Enum name="SkillFuncType" value="58" refParamName="" useRefParam="false">
+					<uint name="物理伤害"/>
+					<uint name="法术伤害"/>
+					<uint name="真实伤害"/>
+					<uint name="回复生命值"/>
+					<uint name="增加攻击速度"/>
+					<uint name="减少攻击速度"/>
+					<uint name="增加移动速度"/>
+					<uint name="减少移动速度"/>
+					<uint name="提高攻击力"/>
+					<uint name="降低攻击力"/>
+					<uint name="吸血"/>
+					<uint name="增加护甲"/>
+					<uint name="减少护甲"/>
+					<uint name="增加抗性"/>
+					<uint name="减少抗性"/>
+					<uint name="免疫效果"/>
+					<uint name="减少技能CD"/>
+					<uint name="增加法术强度"/>
+					<uint name="减少法术强度"/>
+					<uint name="增加暴击率"/>
+					<uint name="减少暴击率"/>
+					<uint name="增加最大生命"/>
+					<uint name="减少最大生命"/>
+					<uint name="增加物理穿透"/>
+					<uint name="减少物理穿透"/>
+					<uint name="增加法术穿透"/>
+					<uint name="减少法术穿透"/>
+					<uint name="护盾"/>
+					<uint name="增加技能印记"/>
+					<uint name="触发技能印记"/>
+					<uint name="免疫伤害"/>
+					<uint name="免疫控制"/>
+					<uint name="迅速复活"/>
+					<uint name="法球效果"/>
+					<uint name="驱散效果"/>
+					<uint name="物理吸血"/>
+					<uint name="法术吸血"/>
+					<uint name="伤害免疫率"/>
+					<uint name="获取视野效果"/>
+					<uint name="隐身效果"/>
+					<uint name="伤害输出率效果"/>
+					<uint name="韧性率效果"/>
+					<uint name="冷却缩减效果"/>
+					<uint name="抗暴率效果"/>
+					<uint name="条件伤害输出率效果"/>
+					<uint name="忽略RVO"/>
+					<uint name="生命条件效果"/>
+					<uint name="更换血条风格"/>
+					<uint name="目标伤害加成效果"/>
+					<uint name="击杀经验加成效果"/>
+					<uint name="增加经验效果"/>
+					<uint name="受控额外效果"/>
+					<uint name="免疫暴击效果"/>
+					<uint name="限制最大伤害效果"/>
+					<uint name="免疫致命伤害效果"/>
+					<uint name="改变技能"/>
+					<uint name="禁用技能"/>
+					<uint name="改变暴击伤害效果"/>
+					<uint name="回复能量值"/>
+				</Enum>
+			</Event>
+		</Track>
+		<Track trackName="TriggerParticle0" eventType="TriggerParticle" guid="8bce95c6-3047-4ade-9890-565e5ebcd91d" enabled="true" lod="0" useRefParam="false" refParamName="" r="0.000" g="1.000" b="0.667" execOnForceStopped="false" execOnActionCompleted="false" stopAfterLastEvent="true">
+			<Event eventName="TriggerParticle" time="0.000" length="3.000" isDuration="true">
+				<TemplateObject name="targetId" objectName="target" id="1" isTemp="false" refParamName="" useRefParam="false"/>
+				<TemplateObject name="objectSpaceId" objectName="target" id="1" isTemp="false" refParamName="" useRefParam="false"/>
+				<String name="resourceName" value="prefab_skill_effects/tongyong_effects/huanling_effect/zhanchangjijiu_tf_01" refParamName="" useRefParam="false"/>
+				<String name="bindPointName" value="" refParamName="" useRefParam="false"/>
+				<Vector3 name="bindPosOffset" x="0.000" y="1.000" z="0.000" refParamName="" useRefParam="false"/>
+				<EulerAngle name="bindRotOffset" x="0.000" y="0.000" z="0.000" refParamName="" useRefParam="false"/>
+				<Vector3 name="scaling" x="1.000" y="1.000" z="1.000" refParamName="" useRefParam="false"/>
+				<bool name="enableLayer" value="false" refParamName="" useRefParam="false"/>
+				<bool name="bBulletPos" value="false" refParamName="" useRefParam="false"/>
+				<bool name="bBulletDir" value="false" refParamName="" useRefParam="false"/>
+				<bool name="bBullerPosDir" value="false" refParamName="" useRefParam="false"/>
+				<int name="layer" value="0" refParamName="" useRefParam="false"/>
+				<bool name="enableTag" value="false" refParamName="" useRefParam="false"/>
+				<String name="tag" value="" refParamName="" useRefParam="false"/>
+				<bool name="applyActionSpeedToParticle" value="true" refParamName="" useRefParam="false"/>
+				<int name="extend" value="10" refParamName="" useRefParam="false"/>
+				<bool name="bOnlyFollowPos" value="false" refParamName="" useRefParam="false"/>
+				<bool name="bUseSkin" value="false" refParamName="" useRefParam="false"/>
+			</Event>
+		</Track>
+	</Action>
+</Project>
+

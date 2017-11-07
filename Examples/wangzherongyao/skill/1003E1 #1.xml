@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project>
+	<TemplateObjectList>
+		<TemplateObject objectName="self" id="0" isTemp="false"/>
+		<TemplateObject objectName="target" id="1" isTemp="false"/>
+	</TemplateObjectList>
+	<RefParamList/>
+	<Action tag="" length="2.000" loop="false">
+		<Track trackName="SkillFuncDuration0" eventType="SkillFuncDuration" guid="2e1efc8c-d6ca-427a-ba86-f9604cc64a30" enabled="true" lod="0" useRefParam="false" refParamName="" r="1.000" g="0.000" b="0.217" execOnForceStopped="false" execOnActionCompleted="false" stopAfterLastEvent="true">
+			<Event eventName="SkillFuncDuration" time="0.000" length="2.000" isDuration="true">
+				<Enum name="SkillFuncType" value="21" refParamName="" useRefParam="false">
+					<uint name="物理伤害"/>
+					<uint name="法术伤害"/>
+					<uint name="真实伤害"/>
+					<uint name="回复生命值"/>
+					<uint name="增加攻击速度"/>
+					<uint name="减少攻击速度"/>
+					<uint name="增加移动速度"/>
+					<uint name="减少移动速度"/>
+					<uint name="提高攻击力"/>
+					<uint name="降低攻击力"/>
+					<uint name="吸血"/>
+					<uint name="增加护甲"/>
+					<uint name="减少护甲"/>
+					<uint name="增加抗性"/>
+					<uint name="减少抗性"/>
+					<uint name="免疫效果"/>
+					<uint name="减少技能CD"/>
+					<uint name="增加法术强度"/>
+					<uint name="减少法术强度"/>
+					<uint name="增加暴击率"/>
+					<uint name="减少暴击率"/>
+					<uint name="增加最大生命"/>
+					<uint name="减少最大生命"/>
+					<uint name="增加物理穿透"/>
+					<uint name="减少物理穿透"/>
+					<uint name="增加法术穿透"/>
+					<uint name="减少法术穿透"/>
+					<uint name="护盾"/>
+					<uint name="增加技能印记"/>
+					<uint name="触发技能印记"/>
+					<uint name="免疫伤害"/>
+					<uint name="免疫控制"/>
+				</Enum>
+			</Event>
+		</Track>
+	</Action>
+</Project>
+

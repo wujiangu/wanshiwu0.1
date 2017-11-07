@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project>
+	<TemplateObjectList>
+		<TemplateObject objectName="self" id="0" isTemp="false"/>
+		<TemplateObject objectName="target" id="1" isTemp="false"/>
+		<TemplateObject objectName="bullet" id="2" isTemp="true"/>
+	</TemplateObjectList>
+	<RefParamList/>
+	<Action tag="" length="1.500" loop="false">
+		<Track trackName="PlayAnimationTick42" eventType="PlayAnimationTick" guid="73435636-cbf8-4402-bae7-7c80858832da" enabled="true" lod="0" useRefParam="false" refParamName="" r="1.000" g="0.000" b="0.167" execOnForceStopped="false" execOnActionCompleted="false" stopAfterLastEvent="true">
+			<Event eventName="PlayAnimationTick" time="0.000" isDuration="false">
+				<TemplateObject name="targetId" objectName="self" id="0" isTemp="false" refParamName="" useRefParam="false"/>
+				<String name="clipName" value="Dead" refParamName="" useRefParam="false"/>
+				<float name="crossFadeTime" value="0.100" refParamName="" useRefParam="false"/>
+				<float name="playSpeed" value="1.000" refParamName="" useRefParam="false"/>
+				<int name="layer" value="0" refParamName="" useRefParam="false"/>
+				<bool name="loop" value="false" refParamName="" useRefParam="false"/>
+				<bool name="applyActionSpeed" value="false" refParamName="" useRefParam="false"/>
+				<bool name="bNoTimeScale" value="false" refParamName="" useRefParam="false"/>
+			</Event>
+		</Track>
+	</Action>
+</Project>
+

@@ -1,0 +1,14 @@
+﻿namespace ResData
+{
+    using System;
+
+    public enum RES_PVPSPECITEM_GAME_TYPE
+    {
+        RES_PVPSPECITEM_GAME_ENTERTAINMENT = 4,
+        RES_PVPSPECITEM_GAME_MAX = 5,
+        RES_PVPSPECITEM_GAME_MULTILADDER = 3,
+        RES_PVPSPECITEM_GAME_PVPMATCH = 1,
+        RES_PVPSPECITEM_GAME_REWARDMATCH = 2
+    }
+}
+

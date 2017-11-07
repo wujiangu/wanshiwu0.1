@@ -1,0 +1,31 @@
+        [DllImport("apollo", CallingConvention=CallingConvention.Cdecl)]
+        private static extern ApolloResult apollo_connector_connect(ulong objId, uint timeout);
+        [DllImport("apollo", CallingConvention=CallingConvention.Cdecl)]
+        private static extern ApolloResult apollo_connector_disconnect(ulong objId);
+        [DllImport("apollo", CallingConvention=CallingConvention.Cdecl)]
+        private static extern ApolloResult apollo_connector_getstopreason(ulong objId, ref int result, ref int reason, ref int excode);
+        [DllImport("apollo", CallingConvention=CallingConvention.Cdecl)]
+        private static extern int apollo_connector_Initialize(ulong objId, ApolloPlatform platform, uint permission, [MarshalAs(UnmanagedType.LPStr)] string pszSvrUrl);
+        [DllImport("apollo", CallingConvention=CallingConvention.Cdecl)]
+        private static extern ApolloResult apollo_connector_readData(ulong objId, [MarshalAs(UnmanagedType.LPArray)] byte[] buff, ref int size);
+        [DllImport("apollo", CallingConvention=CallingConvention.Cdecl)]
+        private static extern ApolloResult apollo_connector_readUdpData(ulong objId, [MarshalAs(UnmanagedType.LPArray)] byte[] buff, ref int size);
+        [DllImport("apollo", CallingConvention=CallingConvention.Cdecl)]
+        private static extern ApolloResult apollo_connector_reconnect(ulong objId, uint timeout);
+        [DllImport("apollo", CallingConvention=CallingConvention.Cdecl)]
+        private static extern ApolloResult apollo_connector_report_accesstoken(ulong objId, [MarshalAs(UnmanagedType.LPStr)] string atk, uint expire);
+        [DllImport("apollo", CallingConvention=CallingConvention.Cdecl)]
+        private static extern ApolloResult apollo_connector_set_clientType(ulong objId, ClientType type);
+        [DllImport("apollo", CallingConvention=CallingConvention.Cdecl)]
+        private static extern ApolloResult apollo_connector_set_protocol_version(ulong objId, int headVersion, int bodyVersion);
+        [DllImport("apollo", CallingConvention=CallingConvention.Cdecl)]
+        private static extern ApolloResult apollo_connector_setRouteInfo(ulong objId, [MarshalAs(UnmanagedType.LPArray)] byte[] buff, int size);
+        [DllImport("apollo", CallingConvention=CallingConvention.Cdecl)]
+        private static extern ApolloResult apollo_connector_setSecurityInfo(ulong objId, ApolloEncryptMethod encyptMethod, ApolloKeyMaking keyMakingMethod, [MarshalAs(UnmanagedType.LPStr)] string pszDHP);
+        [DllImport("apollo", CallingConvention=CallingConvention.Cdecl)]
+        private static extern ApolloResult apollo_connector_writeData(ulong objId, [MarshalAs(UnmanagedType.LPArray)] byte[] buff, int size);
+        [DllImport("apollo", CallingConvention=CallingConvention.Cdecl)]
+        private static extern ApolloResult apollo_connector_writeData_with_route_info(ulong objId, [MarshalAs(UnmanagedType.LPArray)] byte[] buff, int size, [MarshalAs(UnmanagedType.LPArray)] byte[] routeData, int routeDataLen, bool allowLost);
+        [DllImport("apollo", CallingConvention=CallingConvention.Cdecl)]
+        private static extern ApolloResult apollo_connector_writeUdpData(ulong objId, [MarshalAs(UnmanagedType.LPArray)] byte[] buff, int size);
+    

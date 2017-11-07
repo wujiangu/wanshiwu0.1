@@ -1,0 +1,5 @@
+﻿		public static #CLASS_NAME# #FUNC_NAME#(this ComGuiBinderBase a_binderBase)
+		{
+			return a_binderBase as #CLASS_NAME#;
+		}
+

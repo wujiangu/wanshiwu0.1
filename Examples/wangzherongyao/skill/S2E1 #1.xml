@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project>
+	<TemplateObjectList>
+		<TemplateObject objectName="selfplayer" id="0" isTemp="false"/>
+		<TemplateObject objectName="target" id="1" isTemp="false"/>
+	</TemplateObjectList>
+	<RefParamList/>
+	<Action tag="" length="0.500" loop="false">
+		<Track trackName="SkillFuncInstant0" eventType="SkillFuncInstant" guid="56ad20a6-2e8d-427f-ae35-15ead38dd179" enabled="true" lod="0" useRefParam="false" refParamName="" r="0.133" g="0.000" b="1.000" execOnForceStopped="false" execOnActionCompleted="false" stopAfterLastEvent="true">
+			<Event eventName="SkillFuncInstant" time="0.000" isDuration="false">
+				<Enum name="SkillFuncType" value="0" refParamName="" useRefParam="false">
+					<uint name="物理伤害"/>
+					<uint name="法术伤害"/>
+					<uint name="真实伤害"/>
+					<uint name="回复生命值"/>
+					<uint name="增加攻击速度"/>
+					<uint name="减少攻击速度"/>
+					<uint name="增加移动速度"/>
+					<uint name="减少移动速度"/>
+					<uint name="提高攻击力"/>
+					<uint name="降低攻击力"/>
+					<uint name="吸血"/>
+				</Enum>
+			</Event>
+		</Track>
+		<Track trackName="TriggerParticleTick0" eventType="TriggerParticleTick" guid="63cc97d3-ad21-43a1-ba5a-542a6c8e72a4" enabled="true" lod="0" useRefParam="false" refParamName="" r="0.633" g="1.000" b="0.000" execOnForceStopped="false" execOnActionCompleted="false" stopAfterLastEvent="true">
+			<Event eventName="TriggerParticleTick" time="0.000" isDuration="false">
+				<TemplateObject name="targetId" objectName="None" id="-1" isTemp="false" refParamName="" useRefParam="false"/>
+				<TemplateObject name="objectSpaceId" objectName="target" id="1" isTemp="false" refParamName="" useRefParam="false"/>
+				<String name="resourceName" value="prefab_skill_effects/tongyong_effects/tongyong_hurt/hun_hurt_01" refParamName="" useRefParam="false"/>
+				<float name="lifeTime" value="5.000" refParamName="" useRefParam="false"/>
+				<String name="bindPointName" value="" refParamName="" useRefParam="false"/>
+				<Vector3 name="bindPosOffset" x="0.000" y="0.000" z="0.000" refParamName="" useRefParam="false"/>
+				<EulerAngle name="bindRotOffset" x="0.000" y="1.000" z="0.000" refParamName="" useRefParam="false"/>
+				<Vector3 name="scaling" x="0.500" y="0.500" z="0.500" refParamName="" useRefParam="false"/>
+				<bool name="enableLayer" value="false" refParamName="" useRefParam="false"/>
+				<bool name="bBulletPos" value="false" refParamName="" useRefParam="false"/>
+				<bool name="bBulletDir" value="false" refParamName="" useRefParam="false"/>
+				<bool name="bBullerPosDir" value="false" refParamName="" useRefParam="false"/>
+				<int name="layer" value="0" refParamName="" useRefParam="false"/>
+				<bool name="enableTag" value="false" refParamName="" useRefParam="false"/>
+				<String name="tag" value="" refParamName="" useRefParam="false"/>
+				<bool name="enableMaxLimit" value="false" refParamName="" useRefParam="false"/>
+				<int name="MaxLimit" value="10" refParamName="" useRefParam="false"/>
+				<int name="LimitType" value="-1" refParamName="" useRefParam="false"/>
+				<bool name="applyActionSpeedToParticle" value="true" refParamName="" useRefParam="false"/>
+				<int name="extend" value="10" refParamName="" useRefParam="false"/>
+			</Event>
+		</Track>
+		<Track trackName="PlaySoundTick16" eventType="PlaySoundTick" guid="f0d33bf4-043f-4f9c-88a2-aa80b93a96f2" enabled="true" lod="0" useRefParam="false" refParamName="" r="1.000" g="0.483" b="0.000" execOnForceStopped="false" execOnActionCompleted="false" stopAfterLastEvent="true">
+			<Event eventName="PlaySoundTick" time="0.000" isDuration="false">
+				<TemplateObject name="targetId" objectName="target" id="1" isTemp="false" refParamName="" useRefParam="false"/>
+				<String name="eventName" value="Play_Mst_05_Wolf_Skill_A" refParamName="" useRefParam="false"/>
+			</Event>
+		</Track>
+	</Action>
+</Project>
+

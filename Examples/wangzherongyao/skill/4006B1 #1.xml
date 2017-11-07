@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project>
+	<TemplateObjectList>
+		<TemplateObject objectName="self" id="0" isTemp="false"/>
+		<TemplateObject objectName="target" id="1" isTemp="false"/>
+		<TemplateObject objectName="bullet" id="2" isTemp="true"/>
+	</TemplateObjectList>
+	<RefParamList>
+		<Vector3i name="targetdir" x="0" y="0" z="0" refParamName="" useRefParam="false"/>
+	</RefParamList>
+	<Action tag="" length="1.000" loop="false">
+		<Track trackName="SpawnObjectDuration0" eventType="SpawnObjectDuration" guid="efb27894-3c5f-453c-a7a1-e09a52455247" enabled="true" lod="0" useRefParam="false" refParamName="" r="0.583" g="1.000" b="0.000" execOnForceStopped="false" execOnActionCompleted="false" stopAfterLastEvent="true">
+			<Event eventName="SpawnObjectDuration" time="0.000" length="1.000" isDuration="true">
+				<TemplateObject name="targetId" objectName="bullet" id="2" isTemp="true" refParamName="" useRefParam="false"/>
+				<TemplateObject name="parentId" objectName="self" id="0" isTemp="false" refParamName="" useRefParam="false"/>
+				<TemplateObject name="objectSpaceId" objectName="self" id="0" isTemp="false" refParamName="" useRefParam="false"/>
+				<bool name="bTargetPosition" value="false" refParamName="" useRefParam="false"/>
+				<Vector3i name="targetPosition" x="0" y="0" z="0" refParamName="" useRefParam="false"/>
+				<String name="prefabName" value="prefab_characters/commonempty" refParamName="" useRefParam="false"/>
+				<bool name="recreateExisting" value="true" refParamName="" useRefParam="false"/>
+				<bool name="superTranslation" value="false" refParamName="" useRefParam="false"/>
+				<bool name="modifyTranslation" value="true" refParamName="" useRefParam="false"/>
+				<Vector3i name="translation" x="0" y="0" z="0" refParamName="" useRefParam="false"/>
+				<bool name="modifyDirection" value="true" refParamName="" useRefParam="false"/>
+				<Vector3i name="direction" x="0" y="0" z="0" refParamName="" useRefParam="false"/>
+				<bool name="modifyScaling" value="false" refParamName="" useRefParam="false"/>
+				<Vector3 name="scaling" x="1.000" y="1.000" z="1.000" refParamName="" useRefParam="false"/>
+				<bool name="enableLayer" value="false" refParamName="" useRefParam="false"/>
+				<int name="layer" value="0" refParamName="" useRefParam="false"/>
+				<bool name="enableTag" value="false" refParamName="" useRefParam="false"/>
+				<String name="tag" value="" refParamName="" useRefParam="false"/>
+				<bool name="applyActionSpeedToAnimation" value="true" refParamName="" useRefParam="false"/>
+				<bool name="applyActionSpeedToParticle" value="true" refParamName="" useRefParam="false"/>
+				<int name="sightRadius" value="0" refParamName="" useRefParam="false"/>
+				<bool name="bUseSkin" value="false" refParamName="" useRefParam="false"/>
+			</Event>
+		</Track>
+		<Track trackName="SetCollisionTick0" eventType="SetCollisionTick" guid="64802209-61a8-469c-9765-7732e4b51ea8" enabled="true" lod="0" useRefParam="false" refParamName="" r="0.117" g="1.000" b="0.000" execOnForceStopped="false" execOnActionCompleted="false" stopAfterLastEvent="true">
+			<Event eventName="SetCollisionTick" time="0.000" isDuration="false">
+				<TemplateObject name="targetId" objectName="bullet" id="2" isTemp="false" refParamName="" useRefParam="false"/>
+				<Enum name="type" value="1" refParamName="" useRefParam="false">
+					<uint name="BOX"/>
+					<uint name="SPHERE"/>
+				</Enum>
+				<Vector3i name="Pos" x="0" y="0" z="0" refParamName="" useRefParam="false"/>
+				<Vector3i name="Size" x="0" y="0" z="0" refParamName="" useRefParam="false"/>
+				<int name="Radius" value="10000" refParamName="" useRefParam="false"/>
+			</Event>
+		</Track>
+		<Track trackName="HitTriggerDuration0" eventType="HitTriggerDuration" guid="980456b6-e52c-4489-8c57-0a0d1083410a" enabled="true" lod="0" useRefParam="false" refParamName="" r="0.850" g="1.000" b="0.000" execOnForceStopped="false" execOnActionCompleted="false" stopAfterLastEvent="true">
+			<Event eventName="HitTriggerDuration" time="0.000" length="0.500" isDuration="true">
+				<TemplateObject name="triggerId" objectName="None" id="-1" isTemp="false" refParamName="" useRefParam="false"/>
+				<TemplateObject name="attackerId" objectName="None" id="-1" isTemp="false" refParamName="" useRefParam="false"/>
+				<int name="triggerInterval" value="30" refParamName="" useRefParam="false"/>
+				<int name="TriggerActorInterval" value="30" refParamName="" useRefParam="false"/>
+				<bool name="bFilterEnemy" value="true" refParamName="" useRefParam="false"/>
+				<bool name="bFilterFriend" value="false" refParamName="" useRefParam="false"/>
+				<bool name="bFilterHero" value="false" refParamName="" useRefParam="false"/>
+				<bool name="bFileterMonter" value="true" refParamName="" useRefParam="false"/>
+				<bool name="bFileterOrgan" value="true" refParamName="" useRefParam="false"/>
+				<bool name="bFilterMyself" value="false" refParamName="" useRefParam="false"/>
+				<bool name="bFilterDead" value="true" refParamName="" useRefParam="false"/>
+				<int name="TriggerActorCount" value="32" refParamName="" useRefParam="false"/>
+				<int name="CollideMaxCount" value="1" refParamName="" useRefParam="false"/>
+				<bool name="bEdgeCheck" value="false" refParamName="" useRefParam="false"/>
+				<bool name="bExtraBuff" value="false" refParamName="" useRefParam="false"/>
+				<int name="SelfSkillCombineID_1" value="0" refParamName="" useRefParam="false"/>
+				<int name="SelfSkillCombineID_2" value="0" refParamName="" useRefParam="false"/>
+				<int name="SelfSkillCombineID_3" value="0" refParamName="" useRefParam="false"/>
+				<int name="TargetSkillCombine_1" value="920100" refParamName="" useRefParam="false"/>
+				<int name="TargetSkillCombine_2" value="0" refParamName="" useRefParam="false"/>
+				<int name="TargetSkillCombine_3" value="0" refParamName="" useRefParam="false"/>
+				<bool name="bTriggerBullet" value="false" refParamName="" useRefParam="false"/>
+				<String name="BulletActionName" value="" refParamName="" useRefParam="false"/>
+			</Event>
+		</Track>
+		<Track trackName="TriggerParticleTick1" eventType="TriggerParticleTick" guid="f7102029-1dd0-4336-be84-37bc2ee3fc46" enabled="true" lod="0" useRefParam="false" refParamName="" r="0.600" g="1.000" b="0.000" execOnForceStopped="false" execOnActionCompleted="false" stopAfterLastEvent="true">
+			<Event eventName="TriggerParticleTick" time="0.000" isDuration="false">
+				<TemplateObject name="targetId" objectName="bullet" id="2" isTemp="false" refParamName="" useRefParam="false"/>
+				<TemplateObject name="objectSpaceId" objectName="bullet" id="2" isTemp="false" refParamName="" useRefParam="false"/>
+				<String name="resourceName" value="prefab_skill_effects/tongyong_effects/huanling_effect/aoshuhuixiang_buff_01" refParamName="" useRefParam="false"/>
+				<float name="lifeTime" value="0.300" refParamName="" useRefParam="false"/>
+				<String name="bindPointName" value="" refParamName="" useRefParam="false"/>
+				<Vector3 name="bindPosOffset" x="0.000" y="0.200" z="0.000" refParamName="" useRefParam="false"/>
+				<EulerAngle name="bindRotOffset" x="0.000" y="0.000" z="0.000" refParamName="" useRefParam="false"/>
+				<Vector3 name="scaling" x="0.300" y="0.300" z="0.300" refParamName="" useRefParam="false"/>
+				<bool name="enableLayer" value="false" refParamName="" useRefParam="false"/>
+				<bool name="bBulletPos" value="false" refParamName="" useRefParam="false"/>
+				<bool name="bBulletDir" value="false" refParamName="" useRefParam="false"/>
+				<bool name="bBullerPosDir" value="false" refParamName="" useRefParam="false"/>
+				<int name="layer" value="0" refParamName="" useRefParam="false"/>
+				<bool name="enableTag" value="false" refParamName="" useRefParam="false"/>
+				<String name="tag" value="" refParamName="" useRefParam="false"/>
+				<bool name="enableMaxLimit" value="false" refParamName="" useRefParam="false"/>
+				<int name="MaxLimit" value="10" refParamName="" useRefParam="false"/>
+				<int name="LimitType" value="-1" refParamName="" useRefParam="false"/>
+				<bool name="applyActionSpeedToParticle" value="true" refParamName="" useRefParam="false"/>
+				<int name="extend" value="10" refParamName="" useRefParam="false"/>
+				<bool name="bUseSkin" value="false" refParamName="" useRefParam="false"/>
+			</Event>
+		</Track>
+	</Action>
+</Project>
+

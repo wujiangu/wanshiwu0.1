@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project>
+	<TemplateObjectList>
+		<TemplateObject objectName="self" id="0" isTemp="false"/>
+		<TemplateObject objectName="target" id="1" isTemp="false"/>
+	</TemplateObjectList>
+	<RefParamList/>
+	<Action tag="" length="2.000" loop="false">
+		<Track trackName="SkillFuncDuration3" eventType="SkillFuncDuration" guid="1cae2c67-1044-4519-a066-80bd6edac3e2" enabled="true" lod="0" useRefParam="false" refParamName="" r="0.350" g="0.000" b="1.000" execOnForceStopped="false" execOnActionCompleted="false" stopAfterLastEvent="true">
+			<Event eventName="SkillFuncDuration" time="0.000" length="2.000" isDuration="true">
+				<Enum name="SkillFuncType" value="6" refParamName="" useRefParam="false">
+					<uint name="物理伤害"/>
+					<uint name="法术伤害"/>
+					<uint name="真实伤害"/>
+					<uint name="回复生命值"/>
+					<uint name="增加攻击速度"/>
+					<uint name="减少攻击速度"/>
+					<uint name="增加移动速度"/>
+					<uint name="减少移动速度"/>
+					<uint name="提高攻击力"/>
+					<uint name="降低攻击力"/>
+					<uint name="吸血"/>
+					<uint name="增加护甲"/>
+					<uint name="减少护甲"/>
+					<uint name="增加抗性"/>
+					<uint name="减少抗性"/>
+					<uint name="免疫效果"/>
+					<uint name="减少技能CD"/>
+					<uint name="增加法术强度"/>
+					<uint name="减少法术强度"/>
+					<uint name="增加暴击率"/>
+					<uint name="减少暴击率"/>
+					<uint name="增加最大生命"/>
+					<uint name="减少最大生命"/>
+					<uint name="增加物理穿透"/>
+					<uint name="减少物理穿透"/>
+					<uint name="增加法术穿透"/>
+					<uint name="减少法术穿透"/>
+					<uint name="护盾"/>
+					<uint name="增加技能印记"/>
+					<uint name="触发技能印记"/>
+					<uint name="免疫伤害"/>
+					<uint name="免疫控制"/>
+					<uint name="迅速复活"/>
+					<uint name="法球效果"/>
+					<uint name="驱散效果"/>
+					<uint name="物理吸血"/>
+					<uint name="法术吸血"/>
+					<uint name="伤害免疫率"/>
+					<uint name="获取视野效果"/>
+					<uint name="隐身效果"/>
+					<uint name="伤害输出率效果"/>
+					<uint name="韧性率效果"/>
+					<uint name="冷却缩减效果"/>
+					<uint name="抗暴率效果"/>
+					<uint name="条件伤害输出率效果"/>
+					<uint name="忽略RVO"/>
+					<uint name="生命条件效果"/>
+					<uint name="更换血条风格"/>
+					<uint name="目标伤害加成效果"/>
+					<uint name="击杀经验加成效果"/>
+					<uint name="增加经验效果"/>
+					<uint name="受控额外效果"/>
+					<uint name="免疫暴击效果"/>
+					<uint name="限制最大伤害效果"/>
+					<uint name="免疫致命伤害效果"/>
+				</Enum>
+			</Event>
+		</Track>
+	</Action>
+</Project>
+

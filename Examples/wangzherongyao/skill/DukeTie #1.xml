@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project>
+	<TemplateObjectList>
+		<TemplateObject objectName="source" id="0" isTemp="false"/>
+		<TemplateObject objectName="target" id="1" isTemp="false"/>
+	</TemplateObjectList>
+	<RefParamList/>
+	<Action tag="" length="1.000" loop="false">
+		<Track trackName="SetBehaviourModeTick0" eventType="SetBehaviourModeTick" guid="d9029f8a-4bfc-4ac3-9cb0-ad54ce9e1893" enabled="true" lod="0" useRefParam="false" refParamName="" r="1.000" g="0.200" b="0.000" execOnForceStopped="false" execOnActionCompleted="false" stopAfterLastEvent="true">
+			<Event eventName="SetBehaviourModeTick" time="0.000" isDuration="false">
+				<TemplateObject name="targetId" objectName="target" id="1" isTemp="false" refParamName="" useRefParam="false"/>
+				<bool name="stopMove" value="true" refParamName="" useRefParam="false"/>
+				<bool name="clearMove" value="true" refParamName="" useRefParam="false"/>
+				<bool name="stopCurSkill" value="true" refParamName="" useRefParam="false"/>
+				<bool name="delayStopCurSkill" value="false" refParamName="" useRefParam="false"/>
+			</Event>
+		</Track>
+		<Track trackName="ForbidAbilityDuration0" eventType="ForbidAbilityDuration" guid="89d26e70-dafc-405c-83ce-c854e879b2e1" enabled="true" lod="0" useRefParam="false" refParamName="" r="0.000" g="0.667" b="1.000" execOnForceStopped="false" execOnActionCompleted="false" stopAfterLastEvent="true">
+			<Event eventName="ForbidAbilityDuration" time="0.000" length="60.000" isDuration="true">
+				<TemplateObject name="attackerId" objectName="target" id="1" isTemp="false" refParamName="" useRefParam="false"/>
+				<bool name="forbidMove" value="true" refParamName="" useRefParam="false"/>
+				<bool name="forbidSkill" value="false" refParamName="" useRefParam="false"/>
+				<bool name="forbidSkillAbort" value="true" refParamName="" useRefParam="false"/>
+				<bool name="abortFilterSkill0" value="true" refParamName="" useRefParam="false"/>
+				<bool name="abortFilterSkill1" value="true" refParamName="" useRefParam="false"/>
+				<bool name="abortFilterSkill2" value="true" refParamName="" useRefParam="false"/>
+				<bool name="abortFilterSkill3" value="true" refParamName="" useRefParam="false"/>
+				<bool name="abortFilterSkill4" value="true" refParamName="" useRefParam="false"/>
+				<bool name="abortFilterMove" value="true" refParamName="" useRefParam="false"/>
+				<bool name="abortFilterDamage" value="false" refParamName="" useRefParam="false"/>
+				<bool name="forbidMoveRotate" value="true" refParamName="" useRefParam="false"/>
+				<bool name="delaySkillAbort" value="false" refParamName="" useRefParam="false"/>
+			</Event>
+		</Track>
+	</Action>
+</Project>
+

@@ -1,0 +1,15 @@
+﻿using System.Collections;
+using System.Collections.Generic;
+using UnityEngine;
+using UnityEngine.UI;
+using cs;
+
+public class #SCRIPTNAME# : ComGuiBinderBase , IGuiBinder
+{
+#MEMBERS#
+
+	public void Bind(GameObject a_objRoot)
+	{
+#BIND#
+	}
+}

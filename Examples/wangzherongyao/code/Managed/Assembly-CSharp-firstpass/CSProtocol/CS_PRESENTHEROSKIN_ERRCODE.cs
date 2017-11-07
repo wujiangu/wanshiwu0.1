@@ -1,0 +1,16 @@
+﻿namespace CSProtocol
+{
+    using System;
+
+    public enum CS_PRESENTHEROSKIN_ERRCODE
+    {
+        CS_PRESENTHEROSKIN_COINLIMIT = 5,
+        CS_PRESENTHEROSKIN_LOCK = 2,
+        CS_PRESENTHEROSKIN_MAILFAIL = 6,
+        CS_PRESENTHEROSKIN_NOALLOW = 3,
+        CS_PRESENTHEROSKIN_PROMOTION = 7,
+        CS_PRESENTHEROSKIN_SYS = 1,
+        CS_PRESENTHEROSKIN_UNFRIEND = 4
+    }
+}
+
