@@ -21,7 +21,6 @@ namespace cs
     /// 实现了控件自动绑定GuiBinder，可以直接获取到需要的GuiControl
     /// 所以，为了节约性能，就不再去管理所包含的的所有GuiControl
     /// </summary>
-    [RequireComponent(typeof(RectTransform))]
     public class GuiObject : MonoBehaviour
     {
         public string Name

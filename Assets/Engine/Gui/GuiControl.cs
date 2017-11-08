@@ -136,6 +136,16 @@ namespace cs
             return m_guiEffectPlayer;
         }
 
+        void OnMouseDown()
+        {
+            
+        }
+
+        void OnMouseUp()
+        {
+
+        }
+
         ///////////////////// down cast ////////////////////////////
         public GuiButton ToButton()
         {
@@ -150,6 +160,11 @@ namespace cs
         public GuiParticleSystem ToParticle()
         {
             return this as GuiParticleSystem;
+        }
+
+        public GuiLabel ToLabel()
+        {
+            return this as GuiLabel;
         }
         ///////////////////////////////////////////////////////////
 

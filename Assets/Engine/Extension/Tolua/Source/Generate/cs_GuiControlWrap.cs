@@ -16,6 +16,7 @@ public class cs_GuiControlWrap
 		L.RegFunction("ToButton", ToButton);
 		L.RegFunction("ToImage", ToImage);
 		L.RegFunction("ToParticle", ToParticle);
+		L.RegFunction("ToLabel", ToLabel);
 		L.RegFunction("__eq", op_Equality);
 		L.RegFunction("__tostring", ToLua.op_ToString);
 		L.RegVar("SortingOrderOffset", get_SortingOrderOffset, null);
@@ -195,6 +196,23 @@ public class cs_GuiControlWrap
 			ToLua.CheckArgsCount(L, 1);
 			cs.GuiControl obj = (cs.GuiControl)ToLua.CheckObject<cs.GuiControl>(L, 1);
 			cs.GuiParticleSystem o = obj.ToParticle();
+			ToLua.Push(L, o);
+			return 1;
+		}
+		catch (Exception e)
+		{
+			return LuaDLL.toluaL_exception(L, e);
+		}
+	}
+
+	[MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
+	static int ToLabel(IntPtr L)
+	{
+		try
+		{
+			ToLua.CheckArgsCount(L, 1);
+			cs.GuiControl obj = (cs.GuiControl)ToLua.CheckObject<cs.GuiControl>(L, 1);
+			cs.GuiLabel o = obj.ToLabel();
 			ToLua.Push(L, o);
 			return 1;
 		}

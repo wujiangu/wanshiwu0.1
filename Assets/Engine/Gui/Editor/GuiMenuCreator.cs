@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEditor;
 using UnityEditor.SceneManagement;
+using UnityEngine.UI;
 
 namespace cs
 {
@@ -144,6 +145,39 @@ namespace cs
 
                     Selection.activeObject = objLabel;
                     EditorGUIUtility.PingObject(objLabel);
+                }
+            }
+            else
+            {
+                Logger.Error("UI控件必须在GuiObject节点下创建！！请选中GuiObject节点或其子节点，再创建");
+            }
+        }
+
+        static void setObjAnchor(GameObject obj)
+        {
+            obj.transform.GetComponent<RectTransform>().SetInsetAndSizeFromParentEdge(RectTransform.Edge.Left, 0, 0);
+            obj.transform.GetComponent<RectTransform>().SetInsetAndSizeFromParentEdge(RectTransform.Edge.Top, 0, 0);
+        }
+
+        [MenuItem("GameObject/CS GUI/GuiScrollView")]
+        public static void CreateGuiScrollView()
+        {
+            GameObject[] arrObjSelect = Selection.GetFiltered<GameObject>(SelectionMode.ExcludePrefab);
+            if (arrObjSelect != null && arrObjSelect.Length > 0)
+            {
+                GuiObject guiObject = Utility.FindGuiObjectOwner(arrObjSelect[0].transform);
+                if (guiObject == null)
+                {
+                    Logger.Error("UI控件必须在GuiObject节点下创建！！请选中GuiObject节点或其子节点，再创建");
+                }
+                else
+                {
+                    GameObject obj = Resources.Load("Main/Prefab/GuiScrollView") as GameObject;
+                    if (obj)
+                    {
+                        GameObject guiScrollView = GameObject.Instantiate(obj);
+                        guiScrollView.transform.SetParent(arrObjSelect[0].transform, false);
+                    }
                 }
             }
             else

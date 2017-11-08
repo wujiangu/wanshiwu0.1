@@ -5,12 +5,13 @@ using UnityEngine.UI;
 using UnityEngine.Events;
 using UnityEngine.EventSystems;
 using LuaInterface;
-
+using System.Diagnostics;
+using System.Reflection;
 namespace cs
 {
     [RequireComponent(typeof(Button))]
     [RequireComponent(typeof(Image))]
-    public class GuiButton : GuiControl
+    public class GuiButton : GuiControl, IPointerDownHandler, IPointerUpHandler
     {
         public override bool Initialize()
         {
@@ -156,6 +157,52 @@ namespace cs
             m_image.SetNativeSize();
         }
 
+        public void OnPointerDown(PointerEventData eventData)
+        {
+            for (int i = 0; i < m_listLuaMouseDownCallback.Count; i++)
+            {
+                m_listLuaMouseDownCallback[i].Call();
+            }
+        }
+
+        public void OnPointerUp(PointerEventData eventData)
+        {
+            for (int i = 0; i < m_listLuaMouseUpCallback.Count; i++)
+            {
+                m_listLuaMouseUpCallback[i].Call();
+            }
+        }
+
+        public void AddMouseDownListener(LuaFunction listener)
+        {
+            if (m_listLuaMouseDownCallback.Contains(listener) == false)
+            {
+                m_listLuaMouseDownCallback.Add(listener);
+            }
+        }
+
+        public void RemoveMouseDownListener(LuaFunction listener)
+        {
+            m_listLuaMouseDownCallback.Remove(listener);
+            listener.Dispose();
+            listener = null;
+        }
+
+        public void AddMouseUpListener(LuaFunction listener)
+        {
+            if (m_listLuaMouseUpCallback.Contains(listener) == false)
+            {
+                m_listLuaMouseUpCallback.Add(listener);
+            }
+        }
+
+        public void RemoveMouseUpListener(LuaFunction listener)
+        {
+            m_listLuaMouseUpCallback.Remove(listener);
+            listener.Dispose();
+            listener = null;
+        }
+
         public Button UGUI_Button
         {
             get { return m_button; }
@@ -168,6 +215,9 @@ namespace cs
 
         private void _OnButtonClicked()
         {
+            StackFrame frame = new StackFrame(1);
+            MethodBase method = frame.GetMethod();
+            Logger.Log(method.Name);
             for (int i = 0; i < m_listLuaClickCallback.Count; ++i)
             {
                 m_listLuaClickCallback[i].Call();
@@ -184,6 +234,8 @@ namespace cs
         private AssetObj m_asset;
         private AssetObj m_defaultAsset;
         private List<LuaFunction> m_listLuaClickCallback = new List<LuaFunction>();
+        private List<LuaFunction> m_listLuaMouseDownCallback = new List<LuaFunction>();
+        private List<LuaFunction> m_listLuaMouseUpCallback = new List<LuaFunction>();
     }
 }
 

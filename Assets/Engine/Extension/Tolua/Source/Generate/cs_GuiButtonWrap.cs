@@ -15,6 +15,12 @@ public class cs_GuiButtonWrap
 		L.RegFunction("SetDefaultSprite", SetDefaultSprite);
 		L.RegFunction("SetSprite", SetSprite);
 		L.RegFunction("SetNativeSize", SetNativeSize);
+		L.RegFunction("OnPointerDown", OnPointerDown);
+		L.RegFunction("OnPointerUp", OnPointerUp);
+		L.RegFunction("AddMouseDownListener", AddMouseDownListener);
+		L.RegFunction("RemoveMouseDownListener", RemoveMouseDownListener);
+		L.RegFunction("AddMouseUpListener", AddMouseUpListener);
+		L.RegFunction("RemoveMouseUpListener", RemoveMouseUpListener);
 		L.RegFunction("__eq", op_Equality);
 		L.RegFunction("__tostring", ToLua.op_ToString);
 		L.RegVar("UGUI_Button", get_UGUI_Button, null);
@@ -193,6 +199,108 @@ public class cs_GuiButtonWrap
 			ToLua.CheckArgsCount(L, 1);
 			cs.GuiButton obj = (cs.GuiButton)ToLua.CheckObject<cs.GuiButton>(L, 1);
 			obj.SetNativeSize();
+			return 0;
+		}
+		catch (Exception e)
+		{
+			return LuaDLL.toluaL_exception(L, e);
+		}
+	}
+
+	[MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
+	static int OnPointerDown(IntPtr L)
+	{
+		try
+		{
+			ToLua.CheckArgsCount(L, 2);
+			cs.GuiButton obj = (cs.GuiButton)ToLua.CheckObject<cs.GuiButton>(L, 1);
+			UnityEngine.EventSystems.PointerEventData arg0 = (UnityEngine.EventSystems.PointerEventData)ToLua.CheckObject<UnityEngine.EventSystems.PointerEventData>(L, 2);
+			obj.OnPointerDown(arg0);
+			return 0;
+		}
+		catch (Exception e)
+		{
+			return LuaDLL.toluaL_exception(L, e);
+		}
+	}
+
+	[MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
+	static int OnPointerUp(IntPtr L)
+	{
+		try
+		{
+			ToLua.CheckArgsCount(L, 2);
+			cs.GuiButton obj = (cs.GuiButton)ToLua.CheckObject<cs.GuiButton>(L, 1);
+			UnityEngine.EventSystems.PointerEventData arg0 = (UnityEngine.EventSystems.PointerEventData)ToLua.CheckObject<UnityEngine.EventSystems.PointerEventData>(L, 2);
+			obj.OnPointerUp(arg0);
+			return 0;
+		}
+		catch (Exception e)
+		{
+			return LuaDLL.toluaL_exception(L, e);
+		}
+	}
+
+	[MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
+	static int AddMouseDownListener(IntPtr L)
+	{
+		try
+		{
+			ToLua.CheckArgsCount(L, 2);
+			cs.GuiButton obj = (cs.GuiButton)ToLua.CheckObject<cs.GuiButton>(L, 1);
+			LuaFunction arg0 = ToLua.CheckLuaFunction(L, 2);
+			obj.AddMouseDownListener(arg0);
+			return 0;
+		}
+		catch (Exception e)
+		{
+			return LuaDLL.toluaL_exception(L, e);
+		}
+	}
+
+	[MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
+	static int RemoveMouseDownListener(IntPtr L)
+	{
+		try
+		{
+			ToLua.CheckArgsCount(L, 2);
+			cs.GuiButton obj = (cs.GuiButton)ToLua.CheckObject<cs.GuiButton>(L, 1);
+			LuaFunction arg0 = ToLua.CheckLuaFunction(L, 2);
+			obj.RemoveMouseDownListener(arg0);
+			return 0;
+		}
+		catch (Exception e)
+		{
+			return LuaDLL.toluaL_exception(L, e);
+		}
+	}
+
+	[MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
+	static int AddMouseUpListener(IntPtr L)
+	{
+		try
+		{
+			ToLua.CheckArgsCount(L, 2);
+			cs.GuiButton obj = (cs.GuiButton)ToLua.CheckObject<cs.GuiButton>(L, 1);
+			LuaFunction arg0 = ToLua.CheckLuaFunction(L, 2);
+			obj.AddMouseUpListener(arg0);
+			return 0;
+		}
+		catch (Exception e)
+		{
+			return LuaDLL.toluaL_exception(L, e);
+		}
+	}
+
+	[MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
+	static int RemoveMouseUpListener(IntPtr L)
+	{
+		try
+		{
+			ToLua.CheckArgsCount(L, 2);
+			cs.GuiButton obj = (cs.GuiButton)ToLua.CheckObject<cs.GuiButton>(L, 1);
+			LuaFunction arg0 = ToLua.CheckLuaFunction(L, 2);
+			obj.RemoveMouseUpListener(arg0);
 			return 0;
 		}
 		catch (Exception e)
