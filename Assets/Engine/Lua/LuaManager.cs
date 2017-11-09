@@ -34,7 +34,8 @@ namespace cs
             string[] arrPaths = Setting.Get().LuaPaths;
             for (int i = 0; i < arrPaths.Length; ++i)
             {
-                m_luaState.AddSearchPath(Application.dataPath + arrPaths[i]);
+                m_luaState.AddSearchPath(
+                    string.Format("{0}/{1}/{2}", Application.dataPath, Setting.Get().ResourcesPath, arrPaths[i]));
             }
         }
 

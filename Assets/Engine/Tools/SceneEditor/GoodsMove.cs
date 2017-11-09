@@ -91,7 +91,7 @@ public class GoodsMove : MonoBehaviour
 
             destroyBottomImg();
             OnMouseUp();
-            cs.SceneManager.Get().GetMainScene.LineActiveStatus(false);
+            //cs.SceneManager.Get().GetMainScene.LineActiveStatus(false);
 
             isEnterEdit = false;
         }
@@ -408,6 +408,6 @@ public class GoodsMove : MonoBehaviour
         nSort = transform.GetComponent<Renderer>().sortingOrder;
         transform.GetComponent<Renderer>().sortingOrder = 1000;
         createBottomImg();
-        cs.SceneManager.Get().GetMainScene.LineActiveStatus(true);
+        //cs.SceneManager.Get().GetMainScene.LineActiveStatus(true);
     }
 }

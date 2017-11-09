@@ -88,7 +88,7 @@ namespace cs
                     GameObject objImage = new GameObject("GuiImage");
                     objImage.transform.SetParent(arrObjSelect[0].transform, false);
                     objImage.AddComponent<GuiImage>();
-
+                    
                     Selection.activeObject = objImage;
                     EditorGUIUtility.PingObject(objImage);
                 }

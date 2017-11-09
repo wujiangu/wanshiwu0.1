@@ -60,6 +60,11 @@ namespace cs
 
         public virtual bool Initialize()
         {
+            if (m_isInit)
+            {
+                return false;
+            }
+
             if (gameObject == null)
             {
                 return false;
@@ -87,6 +92,8 @@ namespace cs
             {
                 guiState = EGuiState.Closed;
             }
+
+            m_isInit = true;
             return true;
         }
 
@@ -173,9 +180,18 @@ namespace cs
         {
             Initialize();
         }
+
+        bool m_isSelect = false;
+
+        public void setID(int value)
+        {
+            m_nID = value;
+        }
 #endif
         [SerializeField]
         private int m_nID = 0;
+
+        private bool m_isInit = false;
     }
 }
 

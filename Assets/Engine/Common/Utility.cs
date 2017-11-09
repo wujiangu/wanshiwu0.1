@@ -122,6 +122,11 @@ namespace cs
             UnityEngine.SceneManagement.Scene scene = EditorSceneManager.GetActiveScene();
             return scene.GetRootGameObjects();
         }
+
+        public int OROperation(int a_nLeft, int a_nRight)
+        {
+            return a_nLeft | a_nRight;
+        }
     }
 }
 

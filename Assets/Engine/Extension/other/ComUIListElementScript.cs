@@ -40,7 +40,8 @@
         {
             if (this.m_useSetActiveForDisplay)
             {
-                base.gameObject.CustomActive(false);
+                base.gameObject.SetActive(false);
+                //base.gameObject.CustomActive(false);
             }
             else
             {
@@ -56,7 +57,8 @@
             base.gameObject.name = name + "_" + index.ToString();
             if (this.m_useSetActiveForDisplay)
             {
-                gameObject.CustomActive(true);
+                base.gameObject.SetActive(true);
+                //gameObject.CustomActive(true);
             }
             else
             {

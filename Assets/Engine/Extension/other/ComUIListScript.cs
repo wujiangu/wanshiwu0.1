@@ -248,7 +248,8 @@
         {
             if (this.m_extraContent != null)
             {
-                this.m_extraContent.CustomActive(false);
+                this.m_extraContent.SetActive(false);
+                //this.m_extraContent.CustomActive(false);
             }
         }
 
@@ -345,7 +346,8 @@
                     ComUIListElementScript script2 = this.m_elementTemplate.GetComponent<ComUIListElementScript>();
                     if ((script2 != null) && script2.m_useSetActiveForDisplay)
                     {
-                        this.m_elementTemplate.CustomActive(false);
+                        this.m_elementTemplate.SetActive(false);
+                        //this.m_elementTemplate.CustomActive(false);
                     }
                     else
                     {
@@ -583,7 +585,8 @@
                 }
                 else
                 {
-                    this.m_extraContent.CustomActive(false);
+                    this.m_extraContent.SetActive(false);
+                    //this.m_extraContent.CustomActive(false);
                 }
             }
             this.ResizeContent(ref this.m_contentSize, false);
@@ -593,7 +596,8 @@
         {
             RectTransform transform = this.m_extraContent.transform as RectTransform;
             transform.anchoredPosition = offset;
-            this.m_extraContent.CustomActive(true);
+            this.m_extraContent.SetActive(true);
+            //this.m_extraContent.CustomActive(true);
             if ((this.m_listType == enUIListType.Horizontal) || (this.m_listType == enUIListType.HorizontalGrid))
             {
                 contentSize.x += transform.rect.width + this.m_elementSpacing.x;
@@ -818,7 +822,8 @@
         {
             if (this.m_extraContent != null)
             {
-                this.m_extraContent.CustomActive(true);
+                this.m_extraContent.SetActive(true);
+                //this.m_extraContent.CustomActive(true);
             }
         }
 

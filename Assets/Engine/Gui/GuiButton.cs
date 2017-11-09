@@ -5,8 +5,7 @@ using UnityEngine.UI;
 using UnityEngine.Events;
 using UnityEngine.EventSystems;
 using LuaInterface;
-using System.Diagnostics;
-using System.Reflection;
+
 namespace cs
 {
     [RequireComponent(typeof(Button))]
@@ -215,9 +214,7 @@ namespace cs
 
         private void _OnButtonClicked()
         {
-            StackFrame frame = new StackFrame(1);
-            MethodBase method = frame.GetMethod();
-            Logger.Log(method.Name);
+            Logger.Log("回调");
             for (int i = 0; i < m_listLuaClickCallback.Count; ++i)
             {
                 m_listLuaClickCallback[i].Call();

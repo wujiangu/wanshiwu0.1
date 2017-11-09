@@ -9,7 +9,7 @@ using UnityEditor;
 public class MapDataInspector : Editor
 {
 
-    [MenuItem("Assets/自定义工具/创建地图资源")]
+    
     public static void CreateMapData()
     {
         cs.Utility.CreateAsset<mapData>("DefaultMap");
